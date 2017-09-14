@@ -80,6 +80,26 @@ return array(
 
 
         /**
+         *    getCollectionMetafields() method
+         *
+         *    reference: https://help.shopify.com/api/reference/metafield
+         */
+        "getCollectionMetafields" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/collections/{id}/metafields.json",
+            "summary" => "Get metafields that belong to a Collection",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "string",
+                    "location" => "uri",
+                    "description" => "The ID of the Collection.",
+                    "required" => true
+                )
+            )
+        ),
+        
+        /**
          *    getProductMetafields() method
          *
          *    reference: https://help.shopify.com/api/reference/metafield
@@ -133,7 +153,29 @@ return array(
             "responseModel" => "defaultJsonResponse"
         ),
 
-
+        
+        
+        /**
+         *    getCollectionMetafieldsCount() method
+         *
+         *    reference: https://help.shopify.com/api/reference/metafield
+         */
+        "getCollectionMetafieldsCount" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/collections/{id}/metafields/count.json",
+            "summary" => "Get a count of metafields that belong to a Collection",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Collection.",
+                    "required" => true
+                )
+            )
+        ),
+        
+        
         /**
          *    getProductMetafieldsCount() method
          *
@@ -196,6 +238,33 @@ return array(
             )
         ),
 
+        
+        
+        /**
+         *    getCollectionMetafield() method
+         *
+         *    reference: https://help.shopify.com/api/reference/metafield
+         */
+        "getCollectionMetafield" => array(
+            "httpMethod" => "GET",
+            "uri" => "/admin/collections/{id}/metafields/{metafield_id}.json",
+            "summary" => "Get a single Collection metafield by its ID",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Collection.",
+                    "required" => true
+                ),
+                "metafield_id" => array(
+                    "type" => "number",
+                    "location" => "uri",
+                    "description" => "The ID of the Metafield.",
+                    "required" => true
+                )
+            )
+        ),
 
         /**
          *    getProductMetafield() method
