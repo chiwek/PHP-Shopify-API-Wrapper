@@ -98,7 +98,7 @@ return array(
                 )
             )
         ),
-        
+
         /**
          *    getProductMetafields() method
          *
@@ -153,8 +153,8 @@ return array(
             "responseModel" => "defaultJsonResponse"
         ),
 
-        
-        
+
+
         /**
          *    getCollectionMetafieldsCount() method
          *
@@ -174,8 +174,8 @@ return array(
                 )
             )
         ),
-        
-        
+
+
         /**
          *    getProductMetafieldsCount() method
          *
@@ -238,8 +238,8 @@ return array(
             )
         ),
 
-        
-        
+
+
         /**
          *    getCollectionMetafield() method
          *
@@ -320,7 +320,7 @@ return array(
         ),
 
 
-         /**
+        /**
          *    createMetafield() method
          *
          *    reference: https://help.shopify.com/api/reference/metafield
@@ -331,31 +331,31 @@ return array(
             "summary" => "Create a new metafield for a store",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
-	            "metafield" => array(
-		            "location" => "json",
-		            "parameters" => array(
-		         	    "namespace" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The Namespace for the Metafield."
-		                ),
-		                "key" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The Key for the Metafield."
-		                ),
-		                "value" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The Value of the Metafield."
-		                ),
-		                "value_type" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The Value Type of the Metafield."
-		                )
-					)
-	            )
+                "metafield" => array(
+                    "location" => "json",
+                    "parameters" => array(
+                        "namespace" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Namespace for the Metafield."
+                        ),
+                        "key" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Key for the Metafield."
+                        ),
+                        "value" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value of the Metafield."
+                        ),
+                        "value_type" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value Type of the Metafield."
+                        )
+                    )
+                )
             )
         ),
 
@@ -407,7 +407,7 @@ return array(
         ),
 
 
-         /**
+        /**
          *    createProductMetafield() method
          *
          *    reference: https://help.shopify.com/api/reference/metafield
@@ -418,37 +418,37 @@ return array(
             "summary" => "Create a new metafield for a product",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
-	            "id" => array(
+                "id" => array(
                     "type" => "number",
                     "location" => "uri",
                     "description" => "The ID of the Product.",
                     "required" => true
                 ),
-	            "metafield" => array(
-		            "location" => "json",
-		            "parameters" => array(
-		         	    "namespace" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The Namespace for the Metafield."
-		                ),
-		                "key" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The Key for the Metafield."
-		                ),
-		                "value" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The Value of the Metafield."
-		                ),
-		                "value_type" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The Value Type of the Metafield."
-		                )
-					)
-	            )
+                "metafield" => array(
+                    "location" => "json",
+                    "parameters" => array(
+                        "namespace" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Namespace for the Metafield."
+                        ),
+                        "key" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Key for the Metafield."
+                        ),
+                        "value" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value of the Metafield."
+                        ),
+                        "value_type" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value Type of the Metafield."
+                        )
+                    )
+                )
             )
         ),
 
@@ -510,32 +510,32 @@ return array(
             "summary" => "Update a store Metafield",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
-	            "id" => array(
+                "id" => array(
                     "type" => "number",
                     "location" => "uri",
                     "description" => "The ID of the Product.",
                     "required" => true
                 ),
-	            "metafield" => array(
-		            "location" => "json",
-		            "parameters" => array(
-		         	    "metafieldId" => array(
-		                    "type" => "integer",
-		                    "location" => "json",
-		                    "description" => "The ID for the Metafield."
-		                ),
-		                "value" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The Value of the Metafield."
-		                ),
-		                "value_type" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The Value Type of the Metafield."
-		                )
-					)
-	            )
+                "metafield" => array(
+                    "location" => "json",
+                    "parameters" => array(
+                        "metafieldId" => array(
+                            "type" => "integer",
+                            "location" => "json",
+                            "description" => "The ID for the Metafield."
+                        ),
+                        "value" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value of the Metafield."
+                        ),
+                        "value_type" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value Type of the Metafield."
+                        )
+                    )
+                )
             )
         ),
 
@@ -599,7 +599,7 @@ return array(
             "summary" => "Update a Product Metafield",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
-	            "id" => array(
+                "id" => array(
                     "type" => "number",
                     "location" => "uri",
                     "description" => "The ID of the Product.",
@@ -611,26 +611,26 @@ return array(
                     "description" => "The ID of the Metafield.",
                     "required" => true
                 ),
-	            "metafield" => array(
-		            "location" => "json",
-		            "parameters" => array(
-		         	    "metafieldId" => array(
-		                    "type" => "number",
-		                    "location" => "json",
-		                    "description" => "The ID for the Metafield."
-		                ),
-		                "value" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The Value of the Metafield."
-		                ),
-		                "value_type" => array(
-		                    "type" => "string",
-		                    "location" => "json",
-		                    "description" => "The Value Type of the Metafield."
-		                )
-					)
-	            )
+                "metafield" => array(
+                    "location" => "json",
+                    "parameters" => array(
+                        "metafieldId" => array(
+                            "type" => "number",
+                            "location" => "json",
+                            "description" => "The ID for the Metafield."
+                        ),
+                        "value" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value of the Metafield."
+                        ),
+                        "value_type" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The Value Type of the Metafield."
+                        )
+                    )
+                )
             )
         ),
 
@@ -693,7 +693,7 @@ return array(
             "summary" => "Delete a store Metafield",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
-	            "id" => array(
+                "id" => array(
                     "type" => "number",
                     "location" => "uri",
                     "description" => "The ID of the Metafield.",
@@ -739,7 +739,7 @@ return array(
             "summary" => "Delete a Product Metafield",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
-	            "id" => array(
+                "id" => array(
                     "type" => "number",
                     "location" => "uri",
                     "description" => "The ID of the Product.",
@@ -795,5 +795,5 @@ return array(
 
     "models" => array(
 
-    ),
+    )
 );

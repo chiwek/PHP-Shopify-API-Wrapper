@@ -99,6 +99,56 @@ return array(
                     "description" => "Array of line item IDs and quantities to refund."
                 )
             )
+        ),
+        
+        
+        /**
+         *    createRefund() method
+         *
+         *    reference: https://help.shopify.com/api/reference/refund
+         */
+        "createRefund" => array(
+            "httpMethod" => "POST",
+            "uri" => "/admin/orders/{order_id}/refunds.json",
+            "summary" => "Create a Refund",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+              "refund" => array(
+                "location" => "json",
+                "parameters" => array(
+                  "restock" => array(
+                    "type" => "boolean",
+                    "location" => "json",
+                    "description" => "Restock the items to inventory or not."
+                  ),
+                  "notify" => array(
+                    "type" => "boolean",
+                    "location" => "json",
+                    "description" => "Notify the customer.",
+                  ),
+                  "note" => array(
+                    "type" => "string",
+                    "location" => "json",
+                    "description" => "An optional comment attached to a refund.",
+                  ),
+                  "shipping" => array(
+                    "type" => "string",
+                    "location" => "json",
+                    "description" => "Object to specify how much shipping to refund."
+                  ),
+                  "refund_line_items" => array(
+                      "type" => "string",
+                      "location" => "json",
+                      "description" => "A list of line item objects, containing line_item_id and quantity."
+                  ),
+                  "transactions" => array(
+                      "type" => "string",
+                      "location" => "json",
+                      "description" => "A list of line item objects, containing line_item_id and quantity."
+                  ),
+                )
+              )
+            )
         )
     ),
 
