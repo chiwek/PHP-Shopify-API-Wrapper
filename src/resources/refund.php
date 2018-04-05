@@ -82,22 +82,30 @@ return array(
             "summary" => "Calculate a Refund",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
-                "order_id" => array(
-                    "type" => "number",
-                    "location" => "uri",
-                    "description" => "The ID of the order.",
-                    "required" => true
-                ),
-                "shipping" => array(
+              "order_id" => array(
+                "type" => "number",
+                "location" => "uri",
+                "description" => "The ID of the order.",
+                "required" => true
+              ),
+              "refund" => array(
+                "location" => "json",
+                "parameters" => array(
+                  "shipping" => array(
                     "type" => "string",
                     "location" => "json",
                     "description" => "Object to specify how much shipping to refund."
-                ),
-                "refund_line_items" => array(
-                    "type" => "string",
-                    "location" => "json",
-                    "description" => "Array of line item IDs and quantities to refund."
+                  ),
+                  "refund_line_items" => array(
+                      "type" => "string",
+                      "location" => "json",
+                      "description" => "A list of line item objects, containing line_item_id and quantity."
+                  ),
                 )
+            
+            
+            
+                
             )
         ),
         
@@ -113,6 +121,12 @@ return array(
             "summary" => "Create a Refund",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
+              "order_id" => array(
+                "type" => "number",
+                "location" => "uri",
+                "description" => "The ID of the order.",
+                "required" => true
+              ),
               "refund" => array(
                 "location" => "json",
                 "parameters" => array(
