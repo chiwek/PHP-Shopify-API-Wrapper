@@ -102,10 +102,7 @@ return array(
                       "description" => "A list of line item objects, containing line_item_id and quantity."
                   ),
                 )
-            
-            
-            
-                
+              )
             )
         ),
         
